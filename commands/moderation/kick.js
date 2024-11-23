@@ -51,7 +51,7 @@ module.exports = {
                 content: `${member.user} has been kicked from this server\nReason: ${reason}`
             });
             try{
-                const name = interaction.user.username;
+                const name = interaction.member.user;
                 await member.send(`${name} has kicked you from ${interaction.guild.name}\nReason: ${reason}`);
             }
             catch(error){

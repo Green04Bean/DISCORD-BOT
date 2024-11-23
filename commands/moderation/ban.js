@@ -45,7 +45,7 @@ module.exports = {
                 content: `${member.user} has been banned from this server\nReason: ${reason}`
             });
             try{
-                const name = interaction.user.username;
+                const name = interaction.member.user;
                 await member.send(`${name} has banned you from ${interaction.guild.name}\nReason: ${reason}`);
             }
             catch(error){

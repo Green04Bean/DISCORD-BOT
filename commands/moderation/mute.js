@@ -74,7 +74,7 @@ module.exports = {
             });
 
             try {
-                const name = interaction.user.username;
+                const name = interaction.member.user;
                 await member.send(`${name} has muted you in ${interaction.guild.name} for ${durations[duration]}\nReason: ${reason}`);
             }
             catch(error){
