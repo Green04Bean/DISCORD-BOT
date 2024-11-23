@@ -1,0 +1,4 @@
+# Ignore the environment and config files
+config.json
+# IDK but ignore this too ig
+.idea/
