@@ -4,11 +4,11 @@ module.exports = {
     category: 'utility',
     data: new SlashCommandBuilder()
         .setName('echo')
-        .setDescription('Replies with your input.')
+        .setDescription('Replies with your input')
         .setDMPermission(false)
         .addStringOption(option =>
         option.setName('input')
-            .setDescription('The input to echo back.')
+            .setDescription('The input to echo back')
             .setMaxLength(2_000)
             .setRequired(true))
         .addChannelOption(option =>
